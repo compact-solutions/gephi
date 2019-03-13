@@ -1,9 +1,0 @@
-include config/Preferences/.*
-exclude config/Preferences/org/netbeans/.*
-exclude config/Preferences/org/openide/.*
-include config/.*
-exclude config/Toolbars/.*
-exclude config/Windows2Local-datalab/.*
-exclude config/Windows2Local-overview/.*
-exclude config/Windows2Local-preview/.*
-exclude config/Modules/.*
