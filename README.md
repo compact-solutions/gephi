@@ -1,5 +1,7 @@
 # Gephi - The Open Graph Viz Platform
 
+This is Gephi's repository fork aiming to extract the ForceAtlas2 algorithm and simplify it's usage.
+
 [![build](https://github.com/gephi/gephi/actions/workflows/build.yml/badge.svg)](https://github.com/gephi/gephi/actions/workflows/build.yml)
 [![Downloads](https://img.shields.io/github/downloads/gephi/gephi/v0.10.1/total.svg)](https://github.com/gephi/gephi/releases/tag/v0.10.1)
 [![Downloads](https://img.shields.io/github/downloads/gephi/gephi/total.svg)](https://github.com/gephi/gephi/releases/)
