@@ -1,8 +1,4 @@
 /*
- * Confidential and proprietary. All rights reserved. Compact Solutions LLC 2010-2019.
- */
-
-/*
         Copyright 2008-2011 Gephi
         Authors : Mathieu Jacomy <mathieu.jacomy@gmail.com>
         Website : http://www.gephi.org
