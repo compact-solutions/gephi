@@ -6,7 +6,7 @@
     <groupId>org.gephi</groupId>
     <artifactId>gephi-parent</artifactId>
     <version>0.9.3-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <name>gephi</name>
 
@@ -63,20 +63,17 @@
     <distributionManagement>
     </distributionManagement>
 
-    <!-- List all dependencies with versions so it can be used in child POMs 
+    <!-- List all dependencies with versions so it can be used in child POMs
     without explicit versions -->
     <dependencyManagement>
-        <!-- Dependencies -->
-        <dependencies>
-            <dependency>
-                <groupId>org.apache.xmlgraphics</groupId>
-                <artifactId>batik-transcoder</artifactId>
-                <version>${batik.version}</version>
-            </dependency>
-        </dependencies>
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>org.apache.xmlgraphics</groupId>
+            <artifactId>batik-transcoder</artifactId>
+            <version>${batik.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
