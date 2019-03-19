@@ -54,6 +54,8 @@ public class NodeItem extends AbstractItem {
     public static final String Z = "z";
     public static final String SIZE = "size";
     public static final String COLOR = "color";
+    public static final String BORDER_COLOR = "border-color";
+    public static final String BORDER_WIDTH = "border-width";
 
     public NodeItem(Node source) {
         super(source, Item.NODE);

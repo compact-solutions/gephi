@@ -63,6 +63,8 @@ public class NodeBuilder implements ItemBuilder {
             nodeItem.setData(NodeItem.Y, -n.getY());
             nodeItem.setData(NodeItem.SIZE, n.getSize() * 2f);
             nodeItem.setData(NodeItem.COLOR, n.getColor());
+            nodeItem.setData(NodeItem.BORDER_COLOR, n.getBorderColor());
+            nodeItem.setData(NodeItem.BORDER_WIDTH, n.getBorderWidth());
             items[i++] = nodeItem;
         }
         return items;
