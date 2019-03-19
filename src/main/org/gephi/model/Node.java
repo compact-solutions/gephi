@@ -51,4 +51,8 @@ public interface Node extends DataContainer {
     String getCategory();
 
     TextProperties getTextProperties();
+
+    Color getBorderColor();
+
+    Float getBorderWidth();
 }

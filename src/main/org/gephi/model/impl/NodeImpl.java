@@ -22,6 +22,8 @@ public class NodeImpl implements Node {
     private Color color;
     private String category;
     private TextProperties textProperties;
+    private Color borderColor;
+    private Float borderWidth;
     private final DataContainer dataContainer = new DataContainerImpl();
 
 
@@ -187,5 +189,23 @@ public class NodeImpl implements Node {
     @Override
     public String[] getDataKeys() {
         return dataContainer.getDataKeys();
+    }
+
+    @Override
+    public Color getBorderColor() {
+        return borderColor;
+    }
+
+    public void setBorderColor(Color borderColor) {
+        this.borderColor = borderColor;
+    }
+
+    @Override
+    public Float getBorderWidth() {
+        return borderWidth;
+    }
+
+    public void setBorderWidth(Float borderWidth) {
+        this.borderWidth = borderWidth;
     }
 }

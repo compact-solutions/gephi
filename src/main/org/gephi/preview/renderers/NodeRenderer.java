@@ -49,6 +49,7 @@ import org.gephi.preview.types.DependantColor;
 import org.w3c.dom.Element;
 
 import java.awt.*;
+import java.util.Optional;
 
 /**
  * @author Yudi Xue, Mathieu Bastian
@@ -97,8 +98,8 @@ public class NodeRenderer implements Renderer {
         Float size = item.getData(NodeItem.SIZE);
         size /= 2f;
         Color color = item.getData(NodeItem.COLOR);
-        Color borderColor = ((DependantColor) properties.getValue(PreviewProperty.NODE_BORDER_COLOR)).getColor(color);
-        float borderSize = properties.getFloatValue(PreviewProperty.NODE_BORDER_WIDTH);
+        Color borderColor = Optional.ofNullable((Color) item.getData(NodeItem.BORDER_COLOR)).orElse(((DependantColor) properties.getValue(PreviewProperty.NODE_BORDER_COLOR)).getColor(color));
+        float borderSize = Optional.ofNullable((Float) item.getData(NodeItem.BORDER_WIDTH)).orElse(properties.getFloatValue(PreviewProperty.NODE_BORDER_WIDTH));
         float alpha = properties.getBooleanValue(PreviewProperty.NODE_PER_NODE_OPACITY) ?
                 color.getAlpha() / 255f :
                 properties.getFloatValue(PreviewProperty.NODE_OPACITY) / 100f;
